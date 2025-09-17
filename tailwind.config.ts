@@ -19,13 +19,40 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        /* Maharashtra Brand Colors */
+        saffron: {
+          DEFAULT: "hsl(var(--saffron))",
+          light: "hsl(var(--saffron-light))",
+          dark: "hsl(var(--saffron-dark))",
+        },
+        maharashtra: {
+          green: "hsl(var(--maharashtra-green))",
+          "green-light": "hsl(var(--maharashtra-green-light))",
+        },
+        blockchain: {
+          blue: "hsl(var(--blockchain-blue))",
+          purple: "hsl(var(--blockchain-purple))",
+        },
+        
+        /* System Colors */
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          hover: "hsl(var(--secondary-hover))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -46,6 +73,7 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          hover: "hsl(var(--card-hover))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -62,6 +90,19 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-saffron": "var(--gradient-saffron)",
+        "gradient-maharashtra": "var(--gradient-maharashtra)",
+        "gradient-blockchain": "var(--gradient-blockchain)",
+      },
+      boxShadow: {
+        "elegant": "var(--shadow-elegant)",
+        "card": "var(--shadow-card)",
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Poppins', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
