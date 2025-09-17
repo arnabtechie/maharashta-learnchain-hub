@@ -159,6 +159,18 @@ const InitiativesSection = () => {
                 <Button 
                   variant="gov-outline" 
                   className="w-full group-hover:bg-saffron group-hover:text-white group-hover:border-saffron"
+                  onClick={() => {
+                    const routes = {
+                      "diplomas": "/initiatives/verifiable-diplomas",
+                      "teacher-licensing": "/initiatives/teacher-licensing", 
+                      "scholarships": "/initiatives/scholarships",
+                      "assessments": "/initiatives/assessments",
+                      "microcredentials": "/initiatives/microcredentials",
+                      "feedback": "/initiatives/feedback",
+                      "hackathons": "/initiatives/hackathons"
+                    };
+                    window.location.href = routes[initiative.id] || "/";
+                  }}
                 >
                   {initiative.cta}
                   <ArrowRight className="w-4 h-4 ml-2" />
